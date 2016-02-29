@@ -1,0 +1,26 @@
+default: &default
+  address: "smtp.google.com"
+  port: 587
+  domain: "gmail.com"
+  authentication: "plain"
+  user_name: "heatherwhitfield550@gmail.com"
+  password: "hidden505"
+  perform_deliveries: true
+
+development:
+  <<: *default
+  perform_deliveries: true
+
+
+test:
+  <<: *default
+
+production:
+  <<: *default
+  address: "smtp.google.com"
+  port: 587
+  domain: "gmail.com"
+  authentication: "plain"
+  user_name: "heatherwhitfield550@gmail.com"
+  password: "hidden505"
+  perform_deliveries: true
