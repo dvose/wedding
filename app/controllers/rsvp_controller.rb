@@ -17,7 +17,7 @@ class RsvpController < ApplicationController
     if code == 'VOSEWEDDING16'
       rsvp = Rsvp.new(rsvp_params)
       if rsvp.save
-        WeddingMailer.rsvp_confirmation(rsvp).deliver
+        #WeddingMailer.rsvp_confirmation(rsvp).deliver
       end
     else
      return render :json => {status: 'error', message: 'Access Code is incorrect. Your access code is located on your invitation.'}
