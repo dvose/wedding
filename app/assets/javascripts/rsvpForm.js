@@ -23,9 +23,9 @@ $(function() {
     console.log(status);
   }).bind('ajax:error', function(xhr, status, error) {
   	$('.spinner').toggle();
-  	essage.className = 'alert alert-danger';
+  	var message = document.createElement('div');
+    message.className = 'alert alert-danger';
     message.innerHTML = '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>' + 'Error occured when saving your RSVP. Please try again later.';
-    console.log(error);
-    console.log(status);
+    $('#result').append(message);
   });
 });
