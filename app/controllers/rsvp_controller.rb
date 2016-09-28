@@ -1,5 +1,10 @@
 class RsvpController < ApplicationController
 
+  #GET /rsvp
+  def index
+    @rsvps = Rsvp.all
+  end
+
   #POST /rsvp
   def create
     @rsvp_params = rsvp_params

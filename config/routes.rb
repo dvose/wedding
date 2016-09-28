@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'home#index'
   
   #RSVP
+  get 'rsvp' => 'rsvp#index'
   post 'rsvp' => 'rsvp#create', as: 'rsvp_post'
 
   # Example of regular route:
