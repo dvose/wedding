@@ -1,0 +1,17 @@
+<p>Total RSVPs: <%= @rsvps.count %></p>
+<p>Total Guests: <%= @rsvps.count + @rsvps.collect {|r| r.adults + r.children}.sum %></p>
+<p>------------------------</p>
+<% @rsvps.each do |rsvp |%>
+	<p>Name: <%= rsvp.name %> </p>
+	<p>Plus Ones: <%= rsvp.adults %> adults, <%= rsvp.children %> children</p>
+	<p>Message: <%= rsvp.message %></p>
+	<br/>
+	<p>------------------------</p>
+<% end %>
+<script>
+	$(document).ready(function(){
+		$("html").css("background", "white");
+		$("body").css("color", "black");
+		$("body").css("background", "white");
+	});
+</script>
