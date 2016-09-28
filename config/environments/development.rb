@@ -16,8 +16,8 @@ Rails.application.configure do
           :domain => "gmail.com",
           :enable_starttls_auto => true,
           :authentication => "plain",
-          :user_name => "heatherwhitfield550@gmail.com",
-          :password => "hidden505"
+          :user_name => "vosersvp@gmail.com",
+          :password => "5YPtWGbOymeZsb6Q"
       }
   # Settings specified here will take precedence over those in config/application.rb.
 

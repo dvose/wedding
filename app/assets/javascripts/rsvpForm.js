@@ -1,5 +1,9 @@
 $(function() {
+	$("#rsvp_form").submit(function(){
+		$('.spinner').toggle();
+	});
   $("#rsvp_form").bind('ajax:success', function(e, data, status, xhr) {
+  	$('.spinner').toggle();
     if(data['status'] == "error"){
     	var message = document.createElement('div');
     	message.className = 'alert alert-danger';

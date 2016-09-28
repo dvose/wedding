@@ -922,7 +922,8 @@
                 	<div class="col-md-12 animation fadeInUp">
                     	<div id="registry_logo" class="owl-carousel">
     						<div class="item"> <a target="_blank" href="https://www-secure.target.com/gift-registry/giftgiver?registryId=BLIMghCj_ibpVINsDyeUCg"> <%= image_tag("target.jpg") %> </a> </div>
-    						<div class="item"> <a target="_blank" href="https://secure.williams-sonoma.com/registry/8wsn8bnbq8/registry-list.html"> <%= image_tag("william-sonoma.jpg") %> </a> </div>
+    						<div class="item"> <a target="_blank" href="https://disney.honeymoonwishes.com/Honeymoon-Registry-319859-Walt-Disney-World-Resort-Heather-Whitfield-Dustin-Vose.html"> <%= image_tag("disney.jpg") %> </a> </div>
+    						<div class="item"> <a target="_blank" href="https://disney.honeymoonwishes.com/Honeymoon-Registry-319859-Walt-Disney-World-Resort-Heather-Whitfield-Dustin-Vose.html"> <%= image_tag("william-sonoma.jpg") %> </a> </div>
     					</div>
                     </div>
                 </div><!-- END of LOGO SLIDE -->	
@@ -951,14 +952,14 @@
                     <div class="col-md-offset-1"></div>
                     <div id="rsvp_intro" class="col-md-10 col-md-offset-1 text-center animation delay1 fadeInUp">
                         <span class="glyphicon glyphicon-heart intro_heart"></span>
-                        <span class="intro">RSVP for the big day! You will need the access code from your physical invitation. We will
-                                            be sending out the invitations in July!</span>
+                        <span class="intro">RSVP for the big day! You will need the access code from your physical invitation.'</span>
                     </div>
                 </div><!-- END TITLE -->
                 <!-- FORM -->
                 <div class="row">
                 	<div id="result" class="col-md-12"> <!-- Show Message --> </div>
-                  	<!--
+                	<div class="center"><%= image_tag("spinner.gif", :class=>"spinner", :style=>"display: none; width: 90px;")%></div>
+                  	
                 	 <%= form_for :rsvp, :remote => true, :url => rsvp_post_path, :html => {:id => "rsvp_form"} do |f|%>
                 		<div class="col-md-6">
                         	<div id="fullname" class="form-group">
@@ -994,7 +995,7 @@
  							</div> 
                     	</div>
                     <%end%>
-                   -->
+                   
                 </div>
         	</div>
         </section><!--END of RSVP SECTION-->

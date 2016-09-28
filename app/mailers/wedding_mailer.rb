@@ -1,5 +1,5 @@
 class WeddingMailer < ActionMailer::Base
-  default from: "heatherwhitfield550@gmail.com"
+  default from: "vosersvp@gmail.com"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
